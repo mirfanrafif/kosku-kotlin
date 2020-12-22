@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KoskuV2">
-        <activity android:name=".ui.notifications.UbahPengeluaran"></activity>
-        <activity android:name=".ui.notifications.DetailPengeluaran" />
-        <activity android:name=".ui.notifications.TambahPengeluaran" />
-        <activity android:name=".ui.home.UbahPembayaranActivity" />
-        <activity android:name=".ui.home.DetailPembayaran" />
-        <activity android:name=".ui.home.TambahPembayaranActivity" />
-        <activity android:name=".ui.dashboard.UbahAnakKosActivity" />
-        <activity android:name=".ui.dashboard.DetailAnakKosActivity" />
-        <activity android:name=".ui.dashboard.TambahAnakKos" />
+        <activity android:name=".ui.pengeluaran.UbahPengeluaran"></activity>
+        <activity android:name=".ui.pengeluaran.DetailPengeluaran" />
+        <activity android:name=".ui.pengeluaran.TambahPengeluaran" />
+        <activity android:name=".ui.pembayaran.UbahPembayaranActivity" />
+        <activity android:name=".ui.pembayaran.DetailPembayaran" />
+        <activity android:name=".ui.pembayaran.TambahPembayaranActivity" />
+        <activity android:name=".ui.anakkos.UbahAnakKosActivity" />
+        <activity android:name=".ui.anakkos.DetailAnakKosActivity" />
+        <activity android:name=".ui.anakkos.TambahAnakKos" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">

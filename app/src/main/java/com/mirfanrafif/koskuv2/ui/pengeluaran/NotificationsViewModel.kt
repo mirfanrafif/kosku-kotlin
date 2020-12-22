@@ -1,7 +1,5 @@
-package com.mirfanrafif.koskuv2.ui.notifications
+package com.mirfanrafif.koskuv2.ui.pengeluaran
 
-import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.mirfanrafif.koskuv2.models.Pengeluaran

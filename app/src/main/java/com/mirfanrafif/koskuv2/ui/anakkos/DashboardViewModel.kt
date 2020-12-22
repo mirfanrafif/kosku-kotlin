@@ -1,11 +1,7 @@
-package com.mirfanrafif.koskuv2.ui.dashboard
+package com.mirfanrafif.koskuv2.ui.anakkos
 
-import android.util.Log
-import android.widget.Toast
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.mirfanrafif.koskuv2.models.AnakKos
 import com.mirfanrafif.koskuv2.services.Client
 import retrofit2.Call

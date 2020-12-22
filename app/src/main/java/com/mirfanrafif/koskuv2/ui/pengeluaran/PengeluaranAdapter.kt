@@ -1,4 +1,4 @@
-package com.mirfanrafif.koskuv2.ui.notifications
+package com.mirfanrafif.koskuv2.ui.pengeluaran
 
 import android.content.Context
 import android.content.Intent

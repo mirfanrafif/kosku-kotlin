@@ -1,17 +1,14 @@
-package com.mirfanrafif.koskuv2.ui.home
+package com.mirfanrafif.koskuv2.ui.pembayaran
 
-import android.widget.Toast
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.mirfanrafif.koskuv2.models.Pembayaran
 import com.mirfanrafif.koskuv2.services.Client
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class HomeViewModel : ViewModel() {
+class PembayaranViewModel : ViewModel() {
 
     fun getAllPembayaran() : MutableLiveData<List<Pembayaran>> {
         val listPembayaran : MutableLiveData<List<Pembayaran>> = MutableLiveData()

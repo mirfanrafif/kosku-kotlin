@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".ui.home.DetailPembayaran">
+    tools:context=".ui.pembayaran.DetailPembayaran">
 
     <TextView
         android:id="@+id/nohpAnakKosPembayaranLabel"
@@ -22,7 +22,6 @@
         style="@style/TextContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/no_hp"
         app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_namaAnakKos"
         app:layout_constraintTop_toTopOf="@+id/nohpAnakKosPembayaranLabel" />
 
@@ -50,11 +49,10 @@
 
     <TextView
         android:id="@+id/DetailPembayaran_idPembayaranText"
+        style="@style/TextContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="@string/id_pembayaran"
-        style="@style/TextContent"
         app:layout_constraintStart_toEndOf="@+id/idPembayaranLabel"
         app:layout_constraintTop_toTopOf="@+id/idPembayaranLabel" />
 
@@ -70,10 +68,9 @@
 
     <TextView
         android:id="@+id/DetailPembayaran_bulanText"
+        style="@style/TextContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bulan"
-        style="@style/TextContent"
         app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_idPembayaranText"
         app:layout_constraintTop_toTopOf="@+id/bulanLabel" />
 
@@ -89,10 +86,9 @@
 
     <TextView
         android:id="@+id/DetailPembayaran_tahunText"
+        style="@style/TextContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tahun"
-        style="@style/TextContent"
         app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_bulanText"
         app:layout_constraintTop_toTopOf="@+id/tahunLabel" />
 
@@ -108,10 +104,9 @@
 
     <TextView
         android:id="@+id/DetailPembayaran_namaAnakKos"
+        style="@style/TextContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nama_anak_kos"
-        style="@style/TextContent"
         app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_tahunText"
         app:layout_constraintTop_toTopOf="@+id/namaAnakKosPembayaranLabel" />
 
@@ -130,7 +125,6 @@
         style="@style/TextContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/asal"
         app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_namaAnakKos"
         app:layout_constraintTop_toTopOf="@+id/asalAnakKosPembayaranLabel" />
 

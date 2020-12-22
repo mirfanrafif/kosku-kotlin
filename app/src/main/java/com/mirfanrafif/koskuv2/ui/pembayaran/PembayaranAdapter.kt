@@ -1,4 +1,4 @@
-package com.mirfanrafif.koskuv2.ui.home
+package com.mirfanrafif.koskuv2.ui.pembayaran
 
 import android.content.Context
 import android.content.Intent

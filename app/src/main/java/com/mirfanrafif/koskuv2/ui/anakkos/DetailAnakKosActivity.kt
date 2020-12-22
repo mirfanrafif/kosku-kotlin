@@ -1,4 +1,4 @@
-package com.mirfanrafif.koskuv2.ui.dashboard
+package com.mirfanrafif.koskuv2.ui.anakkos
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
