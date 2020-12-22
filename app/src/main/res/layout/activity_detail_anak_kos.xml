@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.dashboard.DetailAnakKosActivity">
+
+    <TextView
+        android:id="@+id/DetailAnakKos_Nama"
+        style="@style/TextContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/nama"
+        app:layout_constraintStart_toEndOf="@+id/DetailAnakKos_NamaLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailAnakKosLabel" />
+
+    <TextView
+        android:id="@+id/DetailAnakKos_Asal"
+        style="@style/TextContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asal"
+        app:layout_constraintStart_toStartOf="@+id/DetailAnakKos_Nama"
+        app:layout_constraintTop_toTopOf="@+id/DetailAnakKos_AsalLabel" />
+
+    <TextView
+        android:id="@+id/DetailAnakKos_NoHP"
+        style="@style/TextContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_hp"
+        app:layout_constraintStart_toStartOf="@+id/DetailAnakKos_Asal"
+        app:layout_constraintTop_toTopOf="@+id/DetailAnakKos_NoHPLabel" />
+
+    <TextView
+        android:id="@+id/detailAnakKosLabel"
+        style="@style/TextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/detailAnakKosLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DetailAnakKos_NamaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/nama"
+        style="@style/TextTooltips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailAnakKosLabel" />
+
+    <TextView
+        android:id="@+id/DetailAnakKos_AsalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/asal"
+        style="@style/TextTooltips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetailAnakKos_Nama" />
+
+    <TextView
+        android:id="@+id/DetailAnakKos_NoHPLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/no_hp"
+        style="@style/TextTooltips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DetailAnakKos_Asal" />
+
+    <Button
+        android:id="@+id/DetailAnakKos_ubahButton"
+        style="@style/PrimaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ubah"
+        app:layout_constraintBottom_toTopOf="@+id/DetailAnakKos_hapusButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/DetailAnakKos_hapusButton"
+        style="@style/RedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hapus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

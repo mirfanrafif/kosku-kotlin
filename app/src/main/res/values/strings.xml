@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">KoskuV2</string>
+    <string name="title_home">Pembayaran</string>
+    <string name="title_dashboard">Anak Kos</string>
+    <string name="title_notifications">Pengeluaran</string>
+    <string name="namaAnakKosHint">Nama Anak Kos</string>
+    <string name="tambahAnakKosLabel">Tambah Data Anak Kos</string>
+    <string name="asalAnakKosHint">Asal Anak Kos</string>
+    <string name="noHpAnakKosHint">No. HP Anak Kos</string>
+    <string name="detailAnakKosLabel">Detail Anak Kos</string>
+    <string name="nama">Nama</string>
+    <string name="asal">Asal</string>
+    <string name="no_hp">No. HP</string>
+    <string name="tambah_data_pembayaran">Tambah Data Pembayaran</string>
+    <string name="tahun">Tahun</string>
+    <string name="detail_pembayaran">Detail Pembayaran</string>
+    <string name="id_pembayaran">ID Pembayaran</string>
+    <string name="bulan">Bulan</string>
+    <string name="nama_anak_kos">Nama Anak Kos</string>
+    <string name="ubah_data_pembayaran">Ubah Data Pembayaran</string>
+    <string name="nama_pengeluaran">Nama Pengeluaran</string>
+    <string name="nominal">Nominal</string>
+    <string name="jenis_pengeluaran">Jenis Pengeluaran</string>
+    <string-array name="bulanList">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+    <string-array name="jenisPengeluaranList">
+        <item>Tagihan Bulanan</item>
+        <item>Gaji Kebersihan</item>
+        <item>Beli Perabot (Lampu, Kran, Meja, Cat)</item>
+        <item>Servis (Bayar Tukang)</item>
+    </string-array>
+</resources>

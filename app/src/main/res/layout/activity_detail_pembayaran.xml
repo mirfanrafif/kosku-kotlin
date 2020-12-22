@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.home.DetailPembayaran">
+
+    <TextView
+        android:id="@+id/nohpAnakKosPembayaranLabel"
+        style="@style/TextTooltips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/no_hp"
+        app:layout_constraintStart_toStartOf="@+id/tahunLabel"
+        app:layout_constraintTop_toBottomOf="@+id/asalAnakKosPembayaranLabel" />
+
+    <TextView
+        android:id="@+id/DetailPembayaran_nohpAnakKos"
+        style="@style/TextContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_hp"
+        app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_namaAnakKos"
+        app:layout_constraintTop_toTopOf="@+id/nohpAnakKosPembayaranLabel" />
+
+    <TextView
+        android:id="@+id/detailPembayaranTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/detail_pembayaran"
+        style="@style/TextTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idPembayaranLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/id_pembayaran"
+        style="@style/TextTooltips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailPembayaranTitle" />
+
+    <TextView
+        android:id="@+id/DetailPembayaran_idPembayaranText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/id_pembayaran"
+        style="@style/TextContent"
+        app:layout_constraintStart_toEndOf="@+id/idPembayaranLabel"
+        app:layout_constraintTop_toTopOf="@+id/idPembayaranLabel" />
+
+    <TextView
+        android:id="@+id/bulanLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/bulan"
+        style="@style/TextTooltips"
+        app:layout_constraintStart_toStartOf="@+id/idPembayaranLabel"
+        app:layout_constraintTop_toBottomOf="@+id/idPembayaranLabel" />
+
+    <TextView
+        android:id="@+id/DetailPembayaran_bulanText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bulan"
+        style="@style/TextContent"
+        app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_idPembayaranText"
+        app:layout_constraintTop_toTopOf="@+id/bulanLabel" />
+
+    <TextView
+        android:id="@+id/tahunLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tahun"
+        style="@style/TextTooltips"
+        app:layout_constraintStart_toStartOf="@+id/bulanLabel"
+        app:layout_constraintTop_toBottomOf="@+id/bulanLabel" />
+
+    <TextView
+        android:id="@+id/DetailPembayaran_tahunText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tahun"
+        style="@style/TextContent"
+        app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_bulanText"
+        app:layout_constraintTop_toTopOf="@+id/tahunLabel" />
+
+    <TextView
+        android:id="@+id/namaAnakKosPembayaranLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/nama_anak_kos"
+        style="@style/TextTooltips"
+        app:layout_constraintStart_toStartOf="@+id/tahunLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tahunLabel" />
+
+    <TextView
+        android:id="@+id/DetailPembayaran_namaAnakKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_anak_kos"
+        style="@style/TextContent"
+        app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_tahunText"
+        app:layout_constraintTop_toTopOf="@+id/namaAnakKosPembayaranLabel" />
+
+    <TextView
+        android:id="@+id/asalAnakKosPembayaranLabel"
+        style="@style/TextTooltips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/asal"
+        app:layout_constraintStart_toStartOf="@+id/tahunLabel"
+        app:layout_constraintTop_toBottomOf="@+id/namaAnakKosPembayaranLabel" />
+
+    <TextView
+        android:id="@+id/DetailPembayaran_asalAnakKos"
+        style="@style/TextContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asal"
+        app:layout_constraintStart_toStartOf="@+id/DetailPembayaran_namaAnakKos"
+        app:layout_constraintTop_toTopOf="@+id/asalAnakKosPembayaranLabel" />
+
+
+    <Button
+        android:id="@+id/DetailPembayaran_ubahButton"
+        style="@style/PrimaryButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ubah"
+        app:layout_constraintBottom_toTopOf="@+id/DetailPembayaran_hapusButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/DetailPembayaran_hapusButton"
+        style="@style/RedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hapus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
