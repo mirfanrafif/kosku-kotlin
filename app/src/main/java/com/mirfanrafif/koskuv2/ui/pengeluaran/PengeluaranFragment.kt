@@ -12,9 +12,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.mirfanrafif.koskuv2.R
 
-class NotificationsFragment : Fragment() {
+class PengeluaranFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private lateinit var notificationsViewModel: PengeluaranViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -22,7 +22,7 @@ class NotificationsFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         notificationsViewModel =
-                ViewModelProvider(this).get(NotificationsViewModel::class.java)
+                ViewModelProvider(this).get(PengeluaranViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_notifications, container, false)
         val listPengeluaranRv : RecyclerView= root.findViewById(R.id.listPengeluaranRv)
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -15,7 +16,8 @@ import com.mirfanrafif.koskuv2.R
 
 class PembayaranFragment : Fragment() {
 
-    private lateinit var homeViewModel: PembayaranViewModel
+    private lateinit var homeViewModel: DetailPembayaranViewModel
+    private lateinit var loading: ProgressBar
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -23,9 +25,10 @@ class PembayaranFragment : Fragment() {
             savedInstanceState: Bundle?
     ): View? {
         homeViewModel =
-                ViewModelProvider(this).get(PembayaranViewModel::class.java)
+                ViewModelProvider(this).get(DetailPembayaranViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
         val pembayaranRv : RecyclerView = root.findViewById(R.id.listPembayaranRv)
+        loading = root.findViewById(R.id.Pembayaran_Loading)
 
         val tambahPembayaranFab : FloatingActionButton= root.findViewById(R.id.tambahPembayaranFab)
 
@@ -36,6 +39,7 @@ class PembayaranFragment : Fragment() {
 
         homeViewModel.getAllPembayaran().observe(this.viewLifecycleOwner, Observer {
             val pembayaranAdapter = PembayaranAdapter(it, root.context)
+            loading.visibility = View.INVISIBLE
             pembayaranRv.adapter = pembayaranAdapter
             pembayaranRv.layoutManager = LinearLayoutManager(context)
         })

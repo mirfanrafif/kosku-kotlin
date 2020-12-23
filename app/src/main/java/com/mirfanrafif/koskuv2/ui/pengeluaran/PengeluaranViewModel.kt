@@ -8,7 +8,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class NotificationsViewModel : ViewModel() {
+class PengeluaranViewModel : ViewModel() {
 
     fun getAllPengeluaran() : MutableLiveData<List<Pengeluaran>> {
         val listPengeluaran  = MutableLiveData<List<Pengeluaran>>()
