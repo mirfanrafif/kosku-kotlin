@@ -7,33 +7,33 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.mirfanrafif.koskuv2.R
+import com.mirfanrafif.koskuv2.databinding.ItemPembayaranBinding
 import com.mirfanrafif.koskuv2.models.Pembayaran
+import com.mirfanrafif.koskuv2.viewmodel.PembayaranItemViewModel
 
 class PembayaranAdapter(val listPembayaran:  List<Pembayaran>, val context: Context) :
     RecyclerView.Adapter<PembayaranAdapter.PembayaranViewHolder>() {
 
-    class PembayaranViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val namaAnakKosText: TextView = itemView.findViewById(R.id.PembayaranItem_Nama)
-        val bulanText: TextView = itemView.findViewById(R.id.PembayaranItem_Bulan)
-        val tahun: TextView = itemView.findViewById(R.id.PembayaranItem_Tahun)
-        val container : ConstraintLayout = itemView.findViewById(R.id.pembayaranContainer)
+    class PembayaranViewHolder(binding: ItemPembayaranBinding) : RecyclerView.ViewHolder(binding.root) {
+        val binding = binding
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PembayaranViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_pembayaran, parent, false)
-        return PembayaranViewHolder(view)
+        val binding: ItemPembayaranBinding = DataBindingUtil.inflate(
+            view, R.layout.item_pembayaran, parent, false)
+        return PembayaranViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: PembayaranViewHolder, position: Int) {
-        holder.namaAnakKosText.setText(listPembayaran.get(position).idanakkos!!.nama)
-        holder.bulanText.setText(listPembayaran.get(position).bulan!!)
-        holder.tahun.setText(listPembayaran.get(position).tahun!!.toString())
-        holder.container.setOnClickListener {
-            val intent = Intent(holder.container.context, DetailPembayaran::class.java)
-            intent.putExtra("EXTRA_ID", listPembayaran.get(position)._id!!)
+        val pembayaranItemViewModel = PembayaranItemViewModel(listPembayaran.get(position))
+        holder.binding.viewModel = pembayaranItemViewModel
+        holder.binding.pembayaranContainer.setOnClickListener {
+            val intent = Intent(context, DetailPembayaran::class.java)
+            intent.putExtra("EXTRA_ID", listPembayaran.get(position)._id)
             context.startActivity(intent)
         }
     }

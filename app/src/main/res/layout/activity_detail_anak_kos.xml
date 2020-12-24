@@ -8,32 +8,6 @@
     tools:context=".ui.anakkos.DetailAnakKosActivity">
 
     <TextView
-        android:id="@+id/DetailAnakKos_Nama"
-        style="@style/TextContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintStart_toEndOf="@+id/DetailAnakKos_NamaLabel"
-        app:layout_constraintTop_toBottomOf="@+id/detailAnakKosLabel" />
-
-    <TextView
-        android:id="@+id/DetailAnakKos_Asal"
-        style="@style/TextContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/DetailAnakKos_Nama"
-        app:layout_constraintTop_toTopOf="@+id/DetailAnakKos_AsalLabel" />
-
-    <TextView
-        android:id="@+id/DetailAnakKos_NoHP"
-        style="@style/TextContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@+id/DetailAnakKos_Asal"
-        app:layout_constraintTop_toTopOf="@+id/DetailAnakKos_NoHPLabel" />
-
-    <TextView
         android:id="@+id/detailAnakKosLabel"
         style="@style/TextTitle"
         android:layout_width="wrap_content"
@@ -44,38 +18,84 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/DetailAnakKos_NamaLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
-        android:text="@string/nama"
-        style="@style/TextTooltips"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/DetailAnakKos_ubahButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detailAnakKosLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/detailAnakKosLabel">
 
-    <TextView
-        android:id="@+id/DetailAnakKos_AsalLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/asal"
-        style="@style/TextTooltips"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DetailAnakKos_Nama" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/DetailAnakKos_NoHPLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="@string/no_hp"
-        style="@style/TextTooltips"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DetailAnakKos_Asal" />
+            <TextView
+                android:id="@+id/DetailAnakKos_Nama"
+                style="@style/TextContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="59dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toEndOf="@+id/DetailAnakKos_NamaLabel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DetailAnakKos_Asal"
+                style="@style/TextContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/DetailAnakKos_Nama"
+                app:layout_constraintTop_toTopOf="@+id/DetailAnakKos_AsalLabel" />
+
+            <TextView
+                android:id="@+id/DetailAnakKos_NoHP"
+                style="@style/TextContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/DetailAnakKos_Asal"
+                app:layout_constraintTop_toTopOf="@+id/DetailAnakKos_NoHPLabel" />
+
+
+            <TextView
+                android:id="@+id/DetailAnakKos_NamaLabel"
+                style="@style/TextTooltips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/nama"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DetailAnakKos_AsalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/asal"
+                style="@style/TextTooltips"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DetailAnakKos_Nama" />
+
+            <TextView
+                android:id="@+id/DetailAnakKos_NoHPLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/no_hp"
+                style="@style/TextTooltips"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DetailAnakKos_Asal" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/DetailAnakKos_ubahButton"
