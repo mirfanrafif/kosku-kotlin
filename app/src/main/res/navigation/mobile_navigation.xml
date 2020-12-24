@@ -9,17 +9,17 @@
         android:id="@+id/navigation_home"
         android:name="com.mirfanrafif.koskuv2.ui.pembayaran.PembayaranFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_pembayaran" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.mirfanrafif.koskuv2.ui.anakkos.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_anakkos" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.mirfanrafif.koskuv2.ui.pengeluaran.PengeluaranFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_pengeluaran" />
 </navigation>

@@ -23,7 +23,7 @@ class PengeluaranFragment : Fragment() {
     ): View? {
         notificationsViewModel =
                 ViewModelProvider(this).get(PengeluaranViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
+        val root = inflater.inflate(R.layout.fragment_pengeluaran, container, false)
         val listPengeluaranRv : RecyclerView= root.findViewById(R.id.listPengeluaranRv)
 
         notificationsViewModel.getAllPengeluaran().observe(this.viewLifecycleOwner, {

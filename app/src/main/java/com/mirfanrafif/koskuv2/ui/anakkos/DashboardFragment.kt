@@ -23,7 +23,7 @@ class DashboardFragment : Fragment() {
     ): View? {
         dashboardViewModel =
                 ViewModelProvider(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
+        val root = inflater.inflate(R.layout.fragment_anakkos, container, false)
         var recyclerView: RecyclerView = root.findViewById(R.id.listAnakKosRv)
         dashboardViewModel.getAllAnakKos().observe(this.viewLifecycleOwner, {
             val anakKosAdapter = AnakKosAdapter(it, root.context)

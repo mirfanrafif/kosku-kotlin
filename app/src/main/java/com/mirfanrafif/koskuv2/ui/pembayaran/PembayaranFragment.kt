@@ -26,7 +26,7 @@ class PembayaranFragment : Fragment() {
     ): View? {
         homeViewModel =
                 ViewModelProvider(this).get(DetailPembayaranViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
+        val root = inflater.inflate(R.layout.fragment_pembayaran, container, false)
         val pembayaranRv : RecyclerView = root.findViewById(R.id.listPembayaranRv)
         loading = root.findViewById(R.id.Pembayaran_Loading)
 
