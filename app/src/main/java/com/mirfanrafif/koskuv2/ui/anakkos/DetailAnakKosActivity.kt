@@ -83,7 +83,7 @@ class DetailAnakKosActivity : AppCompatActivity() {
     private fun ambilData(id: String) {
         client.getAnakKosService().getAnakKosById(id).enqueue(object : Callback<AnakKos> {
             override fun onResponse(call: Call<AnakKos>, response: Response<AnakKos>) {
-                var anakKos = response.body()!!
+                val anakKos = response.body()!!
                 namaTextView.text = anakKos.nama
                 asalTextView.text = anakKos.asal
                 nohpTextView.text = anakKos.nohp
